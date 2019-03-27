@@ -1,0 +1,1197 @@
+body{
+	font-family: 'Nunito Sans', sans-serif;
+
+}
+
+/*NAV BAR Y LOGO COMIENZO*/
+
+.container{
+	margin: 0 auto;
+
+}
+  
+  header.container{
+  	border-bottom: 2px solid rgba(237, 239, 242, 0.05);
+ 	box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.07); 
+    width: 100%;
+    margin-top: 20px;
+
+ }
+
+
+header .row{
+	display: flex;
+	align-items: center;
+	padding-left: 100px;
+	padding-right: 100px;
+	/*margin: 10px 100px 0 100px;*/
+	/*margin: 0;*/
+}
+
+
+header .logo{
+	height: 80px; /*Se puede crear un marco dandole altura, anchura y resaltando el borde de un elemento vacio */
+	width: 100px;
+	border: 1px solid #000;
+	background-color: #000;
+	color: #fff;
+}
+
+header .logo h1{
+   margin: 0 50px 50px 25px;
+   font-size: 80px;
+   font-weight: 400;  
+}
+
+
+header h2{
+color: black;
+margin-top: 9px;
+font-weight: 700;
+font-size: 16px;
+letter-spacing: 8.5px;
+}
+
+
+header .col-sm-8  li{
+  list-style: none;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  padding: 0px 15px 0px 10px;
+  text-transform: uppercase;
+  border-right: 1px solid #000;
+  position: relative;
+
+}
+
+header .row .col-sm-8 li :hover:after {
+border-bottom: 8px solid rgba(57, 206, 164, 0.60);
+  content: "";
+  left: 10px;
+  margin-top: calc(0.125em / 2 * -1);
+  position: absolute; /*Se necesita position relative en el elemento padre y position absolute en el elemento hijo para mover en todas las direcciones que se desee al elemento hijo dentro del elemento padre.*/
+  right: 15px;
+  top: 30%;
+  border-radius: 3px;
+  z-index: -1; /*Se coloco el surrayado por detras de las letras*/
+}
+
+header .col-sm-8 ul{
+	padding-left: 0;
+}
+
+header .col-sm-8 a{
+	text-decoration: none;
+	color: black;
+}
+
+header .col-sm-8 ul .a{
+	border-right: 1px solid #fff;
+}
+
+
+
+/*NAV BAR Y LOGO FINAL*/
+
+/*INTRO COMIENZO*/
+  #x-desing{
+background-color:transparent;
+  }
+
+ #x-desing .container .col-sm-5 img{
+align-items: left;
+height: 500px;
+width: 600px;
+filter: grayscale(100%);
+
+ }
+ #x-desing .container .col{
+ 	padding-top: 80px;
+ 	z-index: -1;
+ }
+
+ #x-desing .container .col h1 {
+
+ color: black;
+text-align: right;
+text-transform: uppercase; 
+font-size: 4.2em;
+font-weight: 900;
+line-height: 50px;
+
+}
+
+
+#x-desing .container .col h1 span{
+  color: rgb(38, 226, 189);
+  font-size: 1.5em;
+
+}
+
+
+ #x-desing .container .col  p{
+ 	font-size:12px;
+ 	text-transform: uppercase;
+ 	font-weight: 900;
+ 	text-align: right;
+ 	background: black;
+  color: rgb(38, 226, 189);
+  position: absolute;
+  right: 15px;
+  width: 500px;
+  padding-right: 15px; 
+  padding-top: 5px;
+  padding-bottom: 5px; 
+  margin-top: 10px;
+  z-index: -1;
+ }
+
+ .intro-icons {
+ position: absolute;
+ left: 85px;
+ top: 332px;
+ display: flex;  /*Se utilizo display: flex para hacer los margenes de los iconos mas flexibles y de esa manera juntar los bordes.*/
+}
+
+.intro-icons a .fa  {
+ background-color: #191818;
+ /*margin: 0;*/
+  padding: 20px 80px;
+  color: white;
+  transition: background 0.6s;
+}
+
+.intro-icons a .fa:hover {
+  background-color: rgb(61, 229, 204);
+  color: black;
+  transition: background 0.6s; /*La propiedad transition permite establecer una trasicion mas suabe de color o animacion dependiendo de a que elemento se le aplique por ejemplo si cuenta con hover y cierto color cambiante. */
+}
+
+/*PORTRAIT*/
+
+@media screen and (max-width:767px), (orientation: portrait) {
+#x-desing .container .col-sm-5 img{
+	height: 325px;
+	width: 400px;
+}
+}
+@media screen and (max-width:767px), (orientation: portrait){
+	#x-desing .container .col h1{
+		font-size: 3.2em;
+	}
+}
+
+@media screen and (max-width:767px), (orientation: portrait){
+	.intro-icons{
+		display: none;
+		
+	}
+}
+
+
+@media screen and (max-width:767px), (orientation: portrait){
+ #x-desing .container .col  p{
+     width: 570px;	
+     z-index: 1;
+     margin-bottom: 20px;
+	}
+}
+@media screen and (max-width:767px), (orientation: portrait){
+ #x-desing   {
+     margin-bottom: 19px;
+	}
+}
+
+/*LANDSCAPE*/
+
+@media screen and (max-width:1023px) and (orientation: landscape) {
+#x-desing .container .col-sm-5 img{
+	height: 325px;
+	width: 400px;
+}
+}
+
+@media screen and (max-width:1023px) and (orientation: landscape){
+	#x-desing .container .col h1{
+		font-size: 3.2em;
+	}
+}
+
+@media screen and (max-width:1023px) and (orientation: landscape){
+	.intro-icons{
+		display: none;
+		
+	}
+}
+
+
+@media screen and (max-width:1023px) and (orientation: landscape){
+ #x-desing .container .col  p{
+     width: 570px;	
+     z-index: 1;
+     margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width:1023px) and (orientation: landscape){
+ #x-desing {
+     margin-bottom: 19px;
+	}
+}
+
+/*MEDIA QUERIES FOR TABLE*/
+
+@media screen and (min-width:1024px) and (orientation: portrait){
+ #x-desing .container .col  p{
+     width: 780px;	
+     
+	}
+}
+
+
+
+/*INTRO FINAL*/
+
+/*ABOUT-US COMIENZO*/
+
+
+#about-us .container{
+	background: #111111;
+	color: white;
+	padding-left: 150px;
+	padding-right: 150px;
+	padding-top: 40px;
+}
+
+
+#about-us h1{
+	text-transform: uppercase;
+	font-weight: 900;
+	line-height: 30px;
+    font-size: 4em;
+
+   
+}
+
+
+#about-us  h1 span{
+	color: rgb(38, 226, 189);
+}
+
+#about-us .left-side p{
+	margin-top: 50px;
+
+}
+
+#about-us .right-side{
+	border: 3px solid rgb(35, 206, 172) ;
+	width: 360px;
+	height: 500px;
+	text-align: left; 
+	padding: 40px 20px 40px 20px;
+	margin-bottom: 30px;
+}
+
+#about-us .right-side h3{
+	letter-spacing: 2px;
+ color: rgb(35, 206, 172);
+ text-transform: uppercase;
+ font-weight: 900;
+
+}
+
+#about-us .right-side .border{
+	border-bottom: 1px solid rgb(35, 206, 172);
+	padding-bottom: 20px;
+}
+
+/*PORTRAIT*/
+
+@media screen and (max-width:767px), (orientation: portrait){
+ #about-us h1  {
+     font-size: 3.0em;
+	}
+}
+
+@media screen and (max-width:767px), (orientation: portrait){
+ #about-us .container  {
+     padding-left: 80px;
+	}
+}
+
+@media screen and (max-width:767px), (orientation: portrait){
+ #about-us .left-side p  {
+     margin-top: 25px;
+	}
+}
+
+/*LANDSCAPE*/
+
+@media screen and (max-width:1023px) and (orientation: landscape){
+ #about-us h1  {
+     font-size: 3.0em;
+	}
+}
+
+@media screen and (max-width:1023px) and (orientation: landscape){
+ #about-us .container  {
+     padding-left: 80px;
+	}
+}
+
+@media screen and (max-width:1023px) and (orientation: landscape){
+ #about-us .left-side p  {
+     margin-top: 25px;
+	}
+}
+
+
+
+
+
+/*ABOUT-US FINAL*/
+
+/*OUR SERVICES COMIENZO*/
+
+ #our-services .container{
+ 	background: white;
+ 	padding-left: 150px;
+ 	padding-right: 150px;
+
+ }
+
+ #our-services .left-side{
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-right: 30px;
+ }
+
+ #our-services .left-side h1{ 
+font-weight: 900;
+font-size: 4em;
+line-height: 30px;
+ }
+
+#our-services .left-side h1 span{
+color: rgb(38, 226, 189);
+padding-bottom: 100px;
+
+
+}
+
+#our-services ul{
+	list-style: none;
+	font-weight: 900;
+	letter-spacing: 3.5px;
+	padding-left: 2px;
+	/*padding-top: 20px;*/
+	font-size: 1.4em;
+}
+
+#our-services ul li{
+padding-bottom: 20px;
+ padding-top: 20px;
+}
+
+#our-services ul .our-services-list{
+ border-bottom: 2px solid rgb(199, 201, 204);
+
+}
+
+#our-services ul .no-decoration{
+	padding-top: 20px
+}
+
+#our-services .left-side  a {
+	text-decoration: none;
+	color: black;
+    bottom: 0;
+
+}
+
+#our-services .left-side a:hover{ /*Se puede establecer animaciones sencillas con hover. utilizando propiedades tales como position:relative bottom: 5px y transition; */
+color: rgb(38, 226, 189);
+position: relative;
+bottom:5px;
+transition: 0.7s;
+}
+
+#our-services .our-services-text{
+	background: black;
+	color: white;
+	width: 390px;
+	height: 160px;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    right: 28px;
+    margin-bottom: 80px;
+	z-index: 2;
+}
+
+#our-services .right-side h4{
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 2px;
+	font-size: 23px;
+
+}
+
+#our-services .right-side p{
+	letter-spacing: 0.5px;
+}
+
+#our-services .right-side img{
+	width:390px;
+	height:370px;
+	position: relative;
+	right: 28px;
+	filter: grayscale(100%);
+}
+
+#our-services .btn-primary   {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 14px;
+	font-weight: 900;
+	letter-spacing: 1px;
+	background: rgb(38, 226, 189);
+	padding: 8px 18px;
+	margin-left: 237px;
+	margin-top: 2px;
+	border-radius: 0;
+	border: 1px solid rgb(38, 226, 189);
+   }
+
+
+#our-services .btn-primary:hover{
+	background: rgb(21, 153, 127);
+	transition: 0.5s;
+	border: 1px solid rgb(21, 153, 127); 
+
+}
+
+
+#our-services .col-sm-4 h4{
+	width: 210px;
+	text-transform: uppercase;
+    font-size: 20px;
+    background: black;
+    color: white;
+    font-weight: 900;
+    padding: 20px 20px;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    position: relative;
+    bottom: 55px;
+
+
+}
+
+#our-services .col-sm-4 h3{
+	color: rgb(38, 226, 189);
+	font-weight: 900;
+	font-size: 65px;
+	position:relative;
+	bottom: 23px;
+	  
+}
+
+/*PORTRAIT*/
+
+@media screen and (max-width:767px), (orientation: portrait){
+ #our-services .container  {
+     padding-left: 80px;
+     padding-right: 80px;
+	}
+}
+
+@media screen and (max-width:767px), (orientation: portrait){
+ #our-services .left-side h1  {
+     font-size: 3.2em;
+	}
+}
+
+@media screen and (max-width:767px), (orientation: portrait){
+ #our-services .col-sm-4 h4  {
+     width: 175px;
+     
+	}
+}
+
+/*LANDSCAPE*/
+
+@media screen and (max-width:1023px)and (orientation: landscape){
+ #our-services .container  {
+     padding-left: 80px;
+     padding-right: 80px;
+	}
+}
+
+@media screen and (max-width:1023px) and (orientation: landscape){
+ #our-services .left-side h1  {
+     font-size: 3.2em;
+	}
+}
+
+@media screen and (max-width:1023px) and (orientation: landscape){
+ #our-services .col-sm-4 h4  {
+     width: 175px;
+     
+	}
+}
+
+@media screen and (max-width:1023px) and (orientation: landscape){
+ #our-services .right-side img  {
+     width: 350px;
+     
+  }
+}
+
+@media screen and (max-width:1023px) and (orientation: landscape){
+ #our-services .our-services-text  {
+     width: 350px;
+     
+  }
+}
+
+@media screen and (max-width:1023px) and (orientation: landscape){
+#our-services .btn-primary   {
+    position: relative;
+    bottom: 20px;
+    right: 40px;
+     
+  }
+}
+
+
+
+  /*OUR SERVICES FINAL*/
+
+
+  /*PROJECTS WE DONE COMIENZO*/
+
+
+  #projects-we-done .container{
+  	padding-left: 150px;
+  	padding-right: 150px;
+  	padding-top: 40px;
+  	 background: black;
+  	 height: 587px;
+
+  }
+
+ #projects-we-done .top-side .col-sm-6  {
+  color: white;
+  margin-bottom: 40px;
+ } 
+ 
+ #projects-we-done .top-side .col-sm-6 h1{
+ 	font-size: 4em;
+ 	text-transform: uppercase;
+ 	font-weight: 900;
+ 	line-height: 30px;
+ }
+
+
+ #projects-we-done .top-side .col-sm-6 h1 span{
+	color: rgb(38, 226, 189);
+
+ }
+
+ #projects-we-done .icon{
+ 	    text-align: right;
+        margin: 40px 0;
+ }
+
+#projects-we-done .projects-we-done-icons{
+	height: 13px;
+	width: 13px;
+    background-color: white;
+    margin: 0 0 0 10px;
+    display: inline-block;
+}
+#projects-we-done  .projects-we-done-icons:hover {
+  background-color: rgb(54, 216, 178);
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+#projects-we-done .bottom-side{
+	padding-bottom: 0;
+	margin-right: 70px;
+	margin-left: 20px;
+    
+}
+
+#projects-we-done .bottom-side .col-sm-6{
+	padding-right: 0;
+	padding-left: 0;
+
+}
+
+#projects-we-done .bottom-side .left-side{
+	padding: 180px 25px 57px 25px;
+
+  	 max-height: 1024px;
+
+}
+
+#projects-we-done .bottom-side .left-side h2{
+font-weight: 900;
+text-transform: uppercase;
+font-size: 25px;
+letter-spacing: 2px;
+margin-bottom: 0;
+line-height: 20px;
+
+
+}
+
+#projects-we-done .bottom-side .left-side span{
+font-weight: 900;
+letter-spacing: 1px; 
+font-size: 0.9em; 
+}
+
+#projects-we-done .bottom-side .left-side{
+	  background: linear-gradient( rgba(44, 183, 150, 0.85), rgba(44, 183, 150, 0.85)), url("images/projects image 3.jpg")  no-repeat;
+      background-position: center;
+      background-size: cover;
+      color: white;
+           
+}
+
+
+ #projects-we-done .bottom-side .first-image ,.second-image{
+ 	filter: grayscale(100%);
+ }
+
+@media screen and (max-width:767px), (orientation: portrait){
+ #projects-we-done .container  {
+     padding-left: 80px;
+
+	}
+}
+
+@media screen and (max-width:767px), (orientation: portrait){
+  #projects-we-done .top-side .col-sm-6 h1 {
+font-size: 3.2em;     
+	}
+}
+
+@media screen and (max-width:767px), (orientation: portrait){
+  #projects-we-done .bottom-side .left-side {
+padding-top: 100px;     
+	}
+}
+
+/*LANDSCAPE*/
+
+@media screen and (max-width:1023px) and (orientation: landscape){
+ #projects-we-done .container  {
+     padding-left: 70px;
+
+	}
+}
+
+@media screen and (max-width:1023px) and (orientation: landscape){
+  #projects-we-done .top-side .col-sm-6 h1 {
+font-size: 3.2em;     
+	}
+}
+
+@media screen and (max-width:1023px) and (orientation: landscape){
+  #projects-we-done .bottom-side .left-side {
+padding-top: 120px;     
+	}
+}
+
+
+
+/*MEDIA QUERIES FOR TABLE*/
+
+
+@media screen and (min-width:1024px) and (orientation: portrait){
+  #projects-we-done .bottom-side .left-side {
+padding-top: 180px;     
+  }
+}
+
+@media screen and (min-width: 1024px) and (orientation: portrait){
+ #projects-we-done .container  {
+     padding-left: 150px;
+
+  }
+}
+
+@media screen and (min-height: 1024px) and (orientation: landscape){
+ #projects-we-done .bottom-side .left-side  {
+     padding-top: 200px;
+
+  }
+}
+
+@media screen and (min-width: 1920px) and (orientation: landscape){
+ #projects-we-done .bottom-side .left-side  {
+     padding-top: 200px;
+
+  }
+}
+
+@media screen and (min-width: 1920px) and (orientation: landscape){
+ #projects-we-done .container  {
+     padding-left: 200px;
+
+
+  }
+}
+
+
+
+
+  /*PROJECTS WE DONE FINAL*/
+  
+
+  /*OUR  SMART TEAM COMIENZO*/
+
+#our-smart-team .container{
+ padding-left: 150px;
+ padding-right: 150px;
+ background: white;
+  	padding-top: 40px;
+  	padding-bottom: 40px;
+  	display: block;
+
+
+
+}
+
+#our-smart-team .col-sm-8 h1{
+	font-size: 3.9em;
+ 	text-transform: uppercase;
+ 	font-weight: 900;
+ 	line-height: 30px;
+ 	color: black;
+}
+
+#our-smart-team .col-sm-8 h1 span{
+	color: rgb(38, 226, 189);
+
+}
+
+#our-smart-team .icon{
+	 text-align: right;
+      margin-top: 40px;
+      margin-bottom: 60px;
+}
+
+#our-smart-team .our-smart-team-icons{
+	height: 13px;
+	width: 13px;
+    background-color: black;
+    margin: 0 0 0 10px;
+    display: inline-block;
+}
+
+#our-smart-team .our-smart-team-icons:hover {
+  background-color: rgb(54, 216, 178);
+  transition: background 0.5s;
+  cursor: pointer;
+}
+
+   .smart-team-background {
+	background: url("images/teacher.png") no-repeat;
+    background-position: center ;
+    background-size: cover;
+    height: 300px;
+    width: 225px;
+    filter: grayscale(100%);
+}
+#our-smart-team .col-sm-4 .smart-team-text{
+	background-color: black;
+	letter-spacing: 2px;
+	padding-top: 3px;
+	padding-left: 30px;
+	width: 215px;
+}
+
+#our-smart-team .col-sm-4 h2 {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 900;
+	line-height: 20px;
+
+}
+
+#our-smart-team .col-sm-4 h4{
+	font-size: 12px;
+}
+
+#our-smart-team .col-sm-4 h4 ,h2{
+	color: white;
+	line-height: 2px ;
+
+}
+
+#our-smart-team .col-sm-4 img{
+	position: absolute;
+}
+
+#our-smart-team  a {
+	font-size: 12px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  color: black;
+  text-decoration: none;
+
+}
+
+#our-smart-team  a:hover{
+	background-color: rgb(38, 226, 189);
+	transition-background: 0.2s;
+}
+
+/*PORTRAIT*/
+
+@media screen and (max-width:767px), (orientation: portrait){
+  #our-smart-team .container {
+padding-left: 40px;    
+padding-right: 40px; 
+
+	}
+}
+
+@media screen and (max-width:767px), (orientation: portrait){
+ .smart-team-background {
+  height: 250px;
+    width: 190px;
+
+	}
+}
+
+@media screen and (max-width:767px), (orientation: portrait){
+  #our-smart-team .col-sm-8 h1 {
+font-size: 3.2em;
+
+	}
+}
+
+/*LANDSCAPE*/
+
+@media screen and (max-width:1023px) and (orientation: landscape){
+  #our-smart-team .container {
+padding-left: 40px;    
+padding-right: 40px; 
+
+	}
+}
+
+@media screen and (max-width:1023px) and (orientation: landscape){
+  #our-smart-team .col-sm-4 .smart-team-text {
+   width: 200px;
+
+	}
+}
+
+
+
+@media screen and (max-width:1023px) and (orientation: landscape){
+ .smart-team-background {
+  height: 300px;
+    width: 220px;
+
+	}
+}
+
+@media screen and (max-width:1023px) and (orientation: landscape){
+  #our-smart-team .col-sm-8 h1 {
+font-size: 3.2em;
+
+	}
+}
+
+/*MEDIA QUERIES FOR TABLE*/
+
+
+
+@media screen and (min-width:1024px) and (orientation: portrait){
+  #our-smart-team .container {
+padding-left: 150px;    
+padding-right: 150px; 
+
+	}
+}
+
+
+  /*OUR  SMART TEAM FINAL
+
+  /*GET IN  TOUCH COMIENZO*/
+
+  #get-in-touch .container{
+  	padding-top: 40px;
+  	padding-left: 150px;
+  	padding-right:150px;
+    background-color: rgb(32, 33, 35);
+  	color: white;
+  }
+ 
+
+ #get-in-touch h1{
+ 	text-transform: uppercase;
+ 	font-weight: 900;
+ 	line-height: 30px;
+ 	font-size: 4em;
+ }
+
+ #get-in-touch .title{
+ 	margin-bottom: 80px;
+ }
+
+  #get-in-touch h1 span{
+	color: rgb(38, 226, 189);
+
+
+  }
+
+  #get-in-touch h4{
+  	font-family: 'Gloria Hallelujah', cursive;
+  	margin-bottom: 20px;
+
+  } 
+
+  #get-in-touch h3{
+  	font-size: 13px;
+  	font-weight: 700;
+  	text-transform: uppercase;
+  	letter-spacing: 1px;
+  }
+
+   #get-in-touch p{
+   	font-size: 13px;
+   	margin-bottom: 0;
+   	margin-top: 0;
+   	padding-bottom: 0
+   }
+
+  #get-in-touch .cursive{
+  	color: rgb(113, 115, 117);
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+  	font-size: 18px;
+  }
+
+  #get-in-touch h4 i{
+  	color: white;
+  	font-size: 22px;
+  }
+
+  #get-in-touch i{
+  	padding-right: 15px;
+	color: rgb(38, 226, 189);
+  }
+
+#get-in-touch .container h2{
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 900;
+	letter-spacing: 1px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+
+}
+
+#get-in-touch .col-sm-7{
+	padding: 0;
+}
+
+#get-in-touch form{
+	background-color:  rgb(38, 226, 189);
+	padding: 15px 30px 66px 30px;
+	position: center;
+
+}
+
+
+
+#get-in-touch .row {
+	padding: 5px 15px 5px 15px;
+
+}
+
+
+input[type=text], textarea {
+    width: 100%;
+    height: 50px;
+    padding: 12px;
+    border: 1px solid rgb(54, 216, 178);
+    resize: vertical;
+     font-size: 1.1em;
+     color: black;
+     letter-spacing: 2px;
+ }
+
+#get-in-touch .send {
+	margin-top: 20px;
+ width: 100%;
+position: center;
+text-align: center;
+background-color: black;
+padding-top: 15px;
+padding-bottom: 15px;
+
+}
+
+#get-in-touch .send a{
+	letter-spacing: 2px;
+	font-size: 16px;
+text-decoration: none;
+color: white;
+text-transform: uppercase;
+font-weight: 900;
+
+}
+/*Portrait*/
+@media screen and (max-width:767px), (orientation: portrait){
+  #get-in-touch .container {
+   padding-left: 80px;
+   padding-right: 80px;
+
+	}
+}
+/*LANDSCAPE*/
+
+@media screen and (max-height:619px) and (orientation: landscape){
+  #get-in-touch .container {
+   padding-left: 80px;
+   padding-right: 80px;
+
+	}
+}
+
+
+
+/*GET IN  TOUCH FINAL*/
+
+ /*FOOTER COMIENZO*/
+
+footer {
+	background-color: black;
+}
+
+footer .row{
+	
+	padding: 10px 150px 10px 150px;
+}
+
+footer .logo{
+	display: inline-flex;
+}
+
+footer  p, .logo h1{
+	color: white;
+	text-transform: uppercase;
+	font-size: 12px;
+
+
+}
+
+footer .logo h1{
+	font-size: 12px;
+	font-weight: 900;
+	letter-spacing: 6px;
+	padding-top: 25px;
+}
+
+
+footer .logo  div h1 {
+	letter-spacing: 0;
+	text-align: center;
+	color: black;
+	background-color: white;
+	font-size: 45px;
+	font-weight: 400;
+	padding: 0 15px 0 15px;
+	margin-right: 15px;
+}
+
+footer .text-right{
+	padding: 0;
+}
+
+footer .footer-icons{
+	text-align: right;
+     margin-top: 45px;
+
+}
+
+footer .footer-icons a{
+	text-decoration: none;
+     background: white;
+     color: black;
+     padding: 4px 5px 4px 5px;
+     border-radius: 45%;
+     margin-left: 2px;
+}
+
+footer .footer-icons a:hover{
+background-color: rgb(38, 226, 189);
+transition: 0.3s;
+}
+
+@media screen and (max-width:767px), (orientation: portrait){
+  footer .row {
+   padding-left: 80px;
+   padding-right: 80px;
+
+	}
+}
+
+/*LANDSCAPE*/
+
+@media screen and (max-height:619px) and (orientation: landscape){
+  footer .row {
+   padding-left: 80px;
+   padding-right: 80px;
+
+	}
+}
+
+
+
+
+/*MEDIA QUERIES*/
+ 
+ /*MOVILE*/
+
+/*@media screen and (max-width:767px) {
+
+..This is basic media query for respective device.In to this media query  CSS code cover the both view landscape and portrait view.
+
+}
+
+
+@media screen and (min-width:320px) and (max-width:767px) and (orientation:landscape) {
+
+
+..This orientation media query. In to this orientation media query you can specify more about CSS code for landscape view.
+
+}*/
+
+/*TABLE*/
+
+/*@media screen and (max-width:1024px){
+..This is basic media query for respective device.In to this media query  CSS code cover the both view landscape and portrait view.
+}
+@media screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape){
+
+..This orientation media query. In to this orientation media query you can specify more about CSS code for landscape view.
+
+}*/
